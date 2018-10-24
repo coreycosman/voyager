@@ -11,12 +11,18 @@ tm-page(data-title="Staking")
 
   modal-search(type="delegates" v-if="somethingToSearch")
 
-  router-view
+  router-view(
+    :address="address"
+    :something-to-search="somethingToSearch"
+    :properties="properties"
+    :sorted-filtered-enriched-delegates="sortedFilteredEnrichedDelegates")
 </template>
 
 <script>
 import { mapGetters, mapActions } from "vuex"
 import num from "scripts/num"
+import { calculateTokens } from "scripts/common"
+import { includes, shuffle } from "lodash"
 import Mousetrap from "mousetrap"
 import { TmBtn, TmPage, TmDataEmpty, TmDataLoading } from "@tendermint/ui"
 import DataEmptySearch from "common/TmDataEmptySearch"
@@ -53,11 +59,14 @@ export default {
       `delegation`,
       `filters`,
       `committedDelegations`,
-      `config`,
       `connected`,
       `bondingDenom`,
-      `keybase`
+      `keybase`,
+      `user`
     ]),
+    address() {
+      return this.user.address
+    },
     somethingToSearch() {
       return !!this.delegates.delegates.length
     },
@@ -112,6 +121,31 @@ export default {
           class: `slashes`
         }
       ]
+    },
+    enrichedDelegates() {
+      return !this.somethingToSearch
+        ? []
+        : this.delegates.delegates.map(v => {
+            v.small_moniker = v.description.moniker.toLowerCase()
+            v.percent_of_vote = num.percent(
+              v.voting_power / this.delegates.globalPower
+            )
+            v.your_votes = this.num.full(
+              calculateTokens(v, this.committedDelegations[v.id])
+            )
+            v.keybase = this.keybase[v.description.identity]
+            return v
+          })
+    },
+    sortedFilteredEnrichedDelegates() {
+      let query = this.filters.delegates.search.query || ``
+      if (this.filters.delegates.search.visible) {
+        return this.enrichedDelegates.filter(i =>
+          includes(JSON.stringify(i).toLowerCase(), query.toLowerCase())
+        )
+      } else {
+        return this.enrichedDelegates
+      }
     }
   },
   methods: {

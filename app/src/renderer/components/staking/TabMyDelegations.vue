@@ -41,6 +41,7 @@ import DataEmptySearch from "common/TmDataEmptySearch"
 import PanelSort from "staking/PanelSort"
 export default {
   name: `tab-my-delegations`,
+  props: [`properties`],
   components: {
     LiValidator,
     TmDataEmpty,
@@ -56,67 +57,12 @@ export default {
     unbondInfo: `Your bonded validators in unbonding process`
   }),
   computed: {
-    ...mapGetters([
-      `delegates`,
-      `delegation`,
-      `committedDelegations`,
-      `user`,
-      `bondingDenom`
-    ]),
-    address({ user } = this) {
-      return user.address
-    },
+    ...mapGetters([`delegates`, `delegation`, `committedDelegations`]),
     undelegatedValidators(
       { delegates: { delegates }, delegation: { unbondingDelegations } } = this
     ) {
       const unbonding = new Set(Object.keys(unbondingDelegations))
       return delegates.filter(({ id }) => unbonding.has(id))
-    },
-    properties({ bondingDenom } = this) {
-      return [
-        {
-          title: `Moniker`,
-          value: `small_moniker`,
-          tooltip: `The validator's moniker`,
-          class: `name`
-        },
-        {
-          title: `Bonded ${bondingDenom}`,
-          value: `your_votes`,
-          tooltip: `Number of ${bondingDenom} you have delegated to the validator`,
-          class: `your-votes`
-        },
-        {
-          title: `Rewards`,
-          value: `your_rewards`, // TODO: use real rewards
-          tooltip: `Rewards of ${bondingDenom} you have gained from the validator`,
-          class: `your-rewards` // TODO: use real rewards
-        },
-        {
-          title: `Voting Power`,
-          value: `percent_of_vote`,
-          tooltip: `Percentage of ${bondingDenom} the validator has on The Cosmos Hub`,
-          class: `percent_of_vote`
-        },
-        {
-          title: `Uptime`,
-          value: `uptime`,
-          tooltip: `Ratio of blocks signed within the last 10k blocks`,
-          class: `uptime`
-        },
-        {
-          title: `Commission`,
-          value: `commission`,
-          tooltip: `The validator's commission`,
-          class: `commission`
-        },
-        {
-          title: `Slashes`,
-          value: `slashes`, // TODO: use real slashes
-          tooltip: `The validator's slashes`,
-          class: `slashes`
-        }
-      ]
     },
     yourValidators({ committedDelegations, delegates: { delegates } } = this) {
       const committed = new Set(Object.keys(committedDelegations))
