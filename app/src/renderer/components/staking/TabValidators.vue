@@ -6,7 +6,7 @@
     div(v-else)
       panel-sort(:sort='sort', :properties="properties")
       ol(type="1")
-        li-validator(v-for='i in sortedFilteredEnrichedDelegates' :disabled="!userCanDelegate" :key='i.id' :validator='i')
+        li-validator(v-for='i in sortedFilteredEnrichedDelegates' :key='i.id' :validator='i')
 </template>
 
 <script>
@@ -97,12 +97,6 @@ export default {
       } else {
         return sortedEnrichedDelegates
       }
-    },
-    userCanDelegate() {
-      return (
-        (this.shoppingCart.length > 0 || this.user.atoms > 0) &&
-        this.delegation.loadedOnce
-      )
     },
     properties() {
       return [
