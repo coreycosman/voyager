@@ -1,5 +1,5 @@
 <template lang="pug">
-  div
+  div.my-delegations
     h3.tab-header
       | Your Validators
       |
@@ -127,6 +127,10 @@ export default {
 </script>
 <style lang="stylus">
 @require '~variables'
+
+.my-delegations
+  .tm-data-msg
+    margin-left 2rem
 
 .tab-header
   margin 1rem 1rem 0 2rem
