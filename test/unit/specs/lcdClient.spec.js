@@ -496,7 +496,7 @@ describe(`LCD Client`, () => {
                 type: `auth/Account`,
                 value: {
                   address: `cosmosaccaddr1xr9rxc3jr6xzzugreykyrdsyjhtx8qvm4et3yp`,
-                  coins: [{ denom: `steak`, amount: `10` }],
+                  coins: [{ denom: `stake`, amount: `10` }],
                   public_key: null,
                   account_number: `768`,
                   sequence: `0`
@@ -511,7 +511,7 @@ describe(`LCD Client`, () => {
           value: {
             account_number: `768`,
             address: `cosmosaccaddr1xr9rxc3jr6xzzugreykyrdsyjhtx8qvm4et3yp`,
-            coins: [{ amount: `10`, denom: `steak` }],
+            coins: [{ amount: `10`, denom: `stake` }],
             public_key: null,
             sequence: `0`
           }

@@ -7,7 +7,7 @@ tr.li-validator
       span.validator-profile__status(v-bind:class="statusColor" v-tooltip.top="status")
       router-link.li-validator__moniker(:to="{ name: 'validator', params: { validator: validator.id }}", :class='styles') {{ validator.description.moniker }}
       short-bech32.li-validator__address(:address="validator.operator_address")
-  td.li-validator__delegated-steak {{ yourVotes.isLessThan(0.01) && yourVotes.isGreaterThan(0) ? '< ' + num.shortNumber(0.01) : num.shortNumber(yourVotes) }}
+  td.li-validator__delegated-stake {{ yourVotes.isLessThan(0.01) && yourVotes.isGreaterThan(0) ? '< ' + num.shortNumber(0.01) : num.shortNumber(yourVotes) }}
   td.li-validator__rewards n/a
   td.li-validator__voting-power {{ validator.percent_of_vote ? validator.percent_of_vote : `n/a` }}
   td.li-validator__uptime {{ uptime }}

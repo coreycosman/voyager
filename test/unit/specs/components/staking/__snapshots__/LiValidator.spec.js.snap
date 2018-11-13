@@ -50,7 +50,7 @@ exports[`LiValidator has the expected html structure 1`] = `
     </div>
   </td>
   <td
-    class="li-validator__delegated-steak"
+    class="li-validator__delegated-stake"
   >
     0.0000…
   </td>

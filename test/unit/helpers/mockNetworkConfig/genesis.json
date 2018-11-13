@@ -239,7 +239,7 @@
             "amount": 1000
           },
           {
-            "denom": "steak",
+            "denom": "stake",
             "amount": 50
           }
         ]
@@ -252,7 +252,7 @@
             "amount": 1000
           },
           {
-            "denom": "steak",
+            "denom": "stake",
             "amount": 50
           }
         ]
@@ -265,7 +265,7 @@
             "amount": 1000
           },
           {
-            "denom": "steak",
+            "denom": "stake",
             "amount": 50
           }
         ]
@@ -278,7 +278,7 @@
             "amount": 1000
           },
           {
-            "denom": "steak",
+            "denom": "stake",
             "amount": 50
           }
         ]
@@ -291,7 +291,7 @@
             "amount": 1000
           },
           {
-            "denom": "steak",
+            "denom": "stake",
             "amount": 50
           }
         ]
@@ -304,7 +304,7 @@
             "amount": 1000
           },
           {
-            "denom": "steak",
+            "denom": "stake",
             "amount": 50
           }
         ]
@@ -317,7 +317,7 @@
             "amount": 1000
           },
           {
-            "denom": "steak",
+            "denom": "stake",
             "amount": 50
           }
         ]
@@ -330,7 +330,7 @@
             "amount": 1000
           },
           {
-            "denom": "steak",
+            "denom": "stake",
             "amount": 50
           }
         ]
@@ -343,7 +343,7 @@
             "amount": 1000
           },
           {
-            "denom": "steak",
+            "denom": "stake",
             "amount": 50
           }
         ]
@@ -356,7 +356,7 @@
             "amount": 1000
           },
           {
-            "denom": "steak",
+            "denom": "stake",
             "amount": 50
           }
         ]
@@ -369,7 +369,7 @@
             "amount": 1000
           },
           {
-            "denom": "steak",
+            "denom": "stake",
             "amount": 50
           }
         ]
@@ -382,7 +382,7 @@
             "amount": 1000
           },
           {
-            "denom": "steak",
+            "denom": "stake",
             "amount": 50
           }
         ]
@@ -395,7 +395,7 @@
             "amount": 1000
           },
           {
-            "denom": "steak",
+            "denom": "stake",
             "amount": 50
           }
         ]
@@ -404,7 +404,7 @@
         "address": "9D5723057702E2090405AB5D3B48C45B9ABF4377",
         "coins": [
           {
-            "denom": "steak",
+            "denom": "stake",
             "amount": 50
           },
           {
@@ -417,7 +417,7 @@
         "address": "A323EC45243D600204BA3D298E3C20322D08C84C",
         "coins": [
           {
-            "denom": "steak",
+            "denom": "stake",
             "amount": 50
           },
           {
@@ -430,7 +430,7 @@
         "address": "A9A3DADDC8BFFAD52BA51C8F4F2E9F62709412DC",
         "coins": [
           {
-            "denom": "steak",
+            "denom": "stake",
             "amount": 50
           },
           {
@@ -443,7 +443,7 @@
         "address": "B6834D914FE50F0C743E6A012AB20438CFADFB95",
         "coins": [
           {
-            "denom": "steak",
+            "denom": "stake",
             "amount": 50
           },
           {
@@ -456,7 +456,7 @@
         "address": "B75C2C4309475C91E8DE271BC52CBAC408365B83",
         "coins": [
           {
-            "denom": "steak",
+            "denom": "stake",
             "amount": 100
           },
           {
@@ -469,7 +469,7 @@
         "address": "FD30D5C983FFEDEC069C3DDFCF270E41A556A86E",
         "coins": [
           {
-            "denom": "steak",
+            "denom": "stake",
             "amount": 900
           },
           {
@@ -482,7 +482,7 @@
         "address": "C0D0CA58C50B7B02A841E1B27D9A21D939754AC7",
         "coins": [
           {
-            "denom": "steak",
+            "denom": "stake",
             "amount": 50
           },
           {
@@ -495,7 +495,7 @@
         "address": "C5033FCFB67D7BD7B8546389F125710462D4FB6C",
         "coins": [
           {
-            "denom": "steak",
+            "denom": "stake",
             "amount": 50
           },
           {
@@ -508,7 +508,7 @@
         "address": "C6CB038C98026D2F17241A3B3166AE7E9488D9AD",
         "coins": [
           {
-            "denom": "steak",
+            "denom": "stake",
             "amount": 50
           },
           {
@@ -521,7 +521,7 @@
         "address": "D0861E3F22339C507B716102FDD5CA681EDE4F8E",
         "coins": [
           {
-            "denom": "steak",
+            "denom": "stake",
             "amount": 50
           },
           {
@@ -534,7 +534,7 @@
         "address": "D6545CB14FCA7840A295FB0566C27E4B9D526993",
         "coins": [
           {
-            "denom": "steak",
+            "denom": "stake",
             "amount": 50
           },
           {
@@ -547,7 +547,7 @@
         "address": "D841E0DACF3994E6A40126F023F6F32F98A5D89E",
         "coins": [
           {
-            "denom": "steak",
+            "denom": "stake",
             "amount": 50
           },
           {
@@ -560,7 +560,7 @@
         "address": "ECE57661F0CDCF28EED257B72F86240E57F4A612",
         "coins": [
           {
-            "denom": "steak",
+            "denom": "stake",
             "amount": 50
           },
           {
@@ -573,7 +573,7 @@
         "address": "EFE597F7A90D3F3E7599B25259449628E2C4AFAD",
         "coins": [
           {
-            "denom": "steak",
+            "denom": "stake",
             "amount": 50
           },
           {
@@ -590,7 +590,7 @@
             "amount": 1000
           },
           {
-            "denom": "steak",
+            "denom": "stake",
             "amount": 50
           }
         ]
@@ -616,7 +616,7 @@
         "inflation_min": "7/100",
         "goal_bonded": "67/100",
         "max_validators": 100,
-        "bond_denom": "steak"
+        "bond_denom": "stake"
       },
       "bonds": [
         {

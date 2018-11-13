@@ -37,7 +37,7 @@ exports[`PageProposal with magic has the expected html structure 1`] = `
                 class="total-atoms top-section"
               >
                 <h3>
-                  Total Steak
+                  Total Stake
                 </h3>
                 <h2>
                   0.0000…
@@ -47,7 +47,7 @@ exports[`PageProposal with magic has the expected html structure 1`] = `
                 class="unbonded-atoms top-section"
               >
                 <h3>
-                  Available Steak
+                  Available Stake
                 </h3>
                 <h2>
                   0.0000…

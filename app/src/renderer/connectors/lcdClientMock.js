@@ -33,7 +33,7 @@ let state = {
           amount: `2300`
         },
         {
-          denom: `steak`,
+          denom: `stake`,
           amount: `1000`
         }
       ],
@@ -178,7 +178,7 @@ let state = {
                 delegator_addr: addresses[0],
                 delegation: {
                   amount: `24`,
-                  denom: `steak`
+                  denom: `stake`
                 }
               }
             }
@@ -309,7 +309,7 @@ let state = {
     goal_bonded: `6700000000`,
     unbonding_time: `72h0m0s`,
     max_validators: 100,
-    bond_denom: `steak`
+    bond_denom: `stake`
   },
   sendHeight: 2,
   signing_info: {

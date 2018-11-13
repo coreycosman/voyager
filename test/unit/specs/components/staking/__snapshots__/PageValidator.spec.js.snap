@@ -37,7 +37,7 @@ exports[`PageValidator has the expected html structure 1`] = `
                 class="total-atoms top-section"
               >
                 <h3>
-                  Total Steak
+                  Total Stake
                 </h3>
                 <h2>
                   123.4568…
@@ -47,7 +47,7 @@ exports[`PageValidator has the expected html structure 1`] = `
                 class="unbonded-atoms top-section"
               >
                 <h3>
-                  Available Steak
+                  Available Stake
                 </h3>
                 <h2>
                   0.0000…
@@ -218,7 +218,7 @@ exports[`PageValidator has the expected html structure 1`] = `
             class="colored_dl"
           >
             <dt>
-              Delegated Steak
+              Delegated Stake
             </dt>
             <dd>
               123.4568…
@@ -395,7 +395,7 @@ exports[`PageValidator has the expected html structure 1`] = `
             class="info_dl"
           >
             <dt>
-              Self Delegated Steak
+              Self Delegated Stake
             </dt>
             <dd
               id="validator-profile__self-bond"
@@ -407,7 +407,7 @@ exports[`PageValidator has the expected html structure 1`] = `
             class="info_dl"
           >
             <dt>
-              Minimum Self Delegated Steak
+              Minimum Self Delegated Stake
             </dt>
             <dd>
               0 %
@@ -480,7 +480,7 @@ exports[`PageValidator shows a default avatar 1`] = `
                 class="total-atoms top-section"
               >
                 <h3>
-                  Total Steak
+                  Total Stake
                 </h3>
                 <h2>
                   123.4568…
@@ -490,7 +490,7 @@ exports[`PageValidator shows a default avatar 1`] = `
                 class="unbonded-atoms top-section"
               >
                 <h3>
-                  Available Steak
+                  Available Stake
                 </h3>
                 <h2>
                   0.0000…
@@ -661,7 +661,7 @@ exports[`PageValidator shows a default avatar 1`] = `
             class="colored_dl"
           >
             <dt>
-              Delegated Steak
+              Delegated Stake
             </dt>
             <dd>
               123.4568…
@@ -838,7 +838,7 @@ exports[`PageValidator shows a default avatar 1`] = `
             class="info_dl"
           >
             <dt>
-              Self Delegated Steak
+              Self Delegated Stake
             </dt>
             <dd
               id="validator-profile__self-bond"
@@ -850,7 +850,7 @@ exports[`PageValidator shows a default avatar 1`] = `
             class="info_dl"
           >
             <dt>
-              Minimum Self Delegated Steak
+              Minimum Self Delegated Stake
             </dt>
             <dd>
               0 %
@@ -905,7 +905,7 @@ exports[`PageValidator shows an error if the validator couldn't be found 1`] = `
                 class="total-atoms top-section"
               >
                 <h3>
-                  Total Steak
+                  Total Stake
                 </h3>
                 <h2>
                   0.0000…
@@ -915,7 +915,7 @@ exports[`PageValidator shows an error if the validator couldn't be found 1`] = `
                 class="unbonded-atoms top-section"
               >
                 <h3>
-                  Available Steak
+                  Available Stake
                 </h3>
                 <h2>
                   0.0000…

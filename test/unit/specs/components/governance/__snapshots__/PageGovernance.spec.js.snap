@@ -15,7 +15,7 @@ exports[`PageGovernance has the expected html structure 1`] = `
                      </div>
    <div class=\\"total-atoms top-section\\">
       <h3>
-         Total Steak
+         Total Stake
       </h3>
       <h2>
          1,351.0000…
@@ -23,7 +23,7 @@ exports[`PageGovernance has the expected html structure 1`] = `
 </div>
    <div class=\\"unbonded-atoms top-section\\">
       <h3>
-         Available Steak
+         Available Stake
       </h3>
       <h2>
          1,337.0000…
@@ -79,7 +79,7 @@ exports[`PageGovernance has the expected html structure 1`] = `
                         </div>
       <div class=\\"total-atoms top-section\\">
          <h3>
-            Total Steak
+            Total Stake
          </h3>
          <h2>
             1,351.0000…
@@ -87,7 +87,7 @@ exports[`PageGovernance has the expected html structure 1`] = `
 </div>
       <div class=\\"unbonded-atoms top-section\\">
          <h3>
-            Available Steak
+            Available Stake
          </h3>
          <h2>
             1,337.0000…

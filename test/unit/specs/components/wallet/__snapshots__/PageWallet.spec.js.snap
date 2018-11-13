@@ -37,7 +37,7 @@ exports[`PageWallet has the expected html structure 1`] = `
                 class="total-atoms top-section"
               >
                 <h3>
-                  Total Steak
+                  Total Stake
                 </h3>
                 <h2>
                   1,014.0000…
@@ -47,7 +47,7 @@ exports[`PageWallet has the expected html structure 1`] = `
                 class="unbonded-atoms top-section"
               >
                 <h3>
-                  Available Steak
+                  Available Stake
                 </h3>
                 <h2>
                   1,000.0000…
@@ -365,7 +365,7 @@ exports[`PageWallet has the expected html structure 1`] = `
           </a>
           <a
             class="tm-li tm-li-link tm-li-balance"
-            href="#/wallet/send/steak"
+            href="#/wallet/send/stake"
           >
             <div
               class="tm-li-container"
@@ -381,7 +381,7 @@ exports[`PageWallet has the expected html structure 1`] = `
                 <div
                   class="tm-li-dt"
                 >
-                  STEAK
+                  STAKE
                 </div>
                 <div
                   class="tm-li-dd"
@@ -475,7 +475,7 @@ exports[`PageWallet should filter the balances 1`] = `
                 class="total-atoms top-section"
               >
                 <h3>
-                  Total Steak
+                  Total Stake
                 </h3>
                 <h2>
                   1,014.0000…
@@ -485,7 +485,7 @@ exports[`PageWallet should filter the balances 1`] = `
                 class="unbonded-atoms top-section"
               >
                 <h3>
-                  Available Steak
+                  Available Stake
                 </h3>
                 <h2>
                   1,000.0000…
@@ -707,7 +707,7 @@ exports[`PageWallet should filter the balances 1`] = `
           <!---->
           <a
             class="tm-li tm-li-link tm-li-balance"
-            href="#/wallet/send/steak"
+            href="#/wallet/send/stake"
           >
             <div
               class="tm-li-container"
@@ -723,7 +723,7 @@ exports[`PageWallet should filter the balances 1`] = `
                 <div
                   class="tm-li-dt"
                 >
-                  STEAK
+                  STAKE
                 </div>
                 <div
                   class="tm-li-dd"

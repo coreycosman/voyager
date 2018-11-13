@@ -350,7 +350,7 @@ async function makeValidator(number) {
 
   let valPubKey = await getValPubKey(newNodeHome)
   let { address } = await getDefaultKey(newCliHome)
-  await sendTokens(cliHome + `_1`, `10steak`, `local_1`, address)
+  await sendTokens(cliHome + `_1`, `10stake`, `local_1`, address)
   while (true) {
     console.log(`Waiting for funds to delegate`)
     try {
@@ -405,7 +405,7 @@ async function declareValidator(
     `${cliBinary} tx create-validator` +
     ` --home ${mainCliHome}` +
     ` --from ${coinHolderAccountName}` +
-    ` --amount=10steak` +
+    ` --amount=10stake` +
     ` --pubkey=${valPubKey}` +
     ` --address-delegator=${operatorAddress}` +
     ` --moniker="${moniker}"` +

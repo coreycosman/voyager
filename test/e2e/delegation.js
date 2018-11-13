@@ -38,7 +38,7 @@ test(`delegation`, async function(t) {
       `show validator 3`
     )
     let myVotesText = await app.client
-      .$(`.li-validator__delegated-steak`)
+      .$(`.li-validator__delegated-stake`)
       .getText()
     let myVotes = parseFloat(myVotesText.replace(/,/g, ``))
     console.log(myVotesText, myVotes)
@@ -78,7 +78,7 @@ test(`delegation`, async function(t) {
         `//*[@id = 'delegation-modal']//button//*[. = 'Confirm Delegation']`
       )
       .waitForVisible(
-        `//*[. = 'You have successfully delegated your Steaks']`,
+        `//*[. = 'You have successfully delegated your Stakes']`,
         5 * 1000
       )
 
@@ -123,7 +123,7 @@ test(`delegation`, async function(t) {
       .setValue(`#amount`, 5)
       .click(`//*[@id = 'undelegation-modal']//button//*[. = 'Undelegate']`)
       .waitForVisible(
-        `//*[. = 'You have successfully undelegated 5 Steaks.']`,
+        `//*[. = 'You have successfully undelegated 5 Stakes.']`,
         5 * 1000
       )
 

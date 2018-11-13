@@ -35,7 +35,7 @@ exports[`TabParameters has the expected html structure 1`] = `
 </dl>
                <dl class=\\"info_dl\\">
                   <dt>
-                     Goal For Delegated Steaks
+                     Goal For Delegated Stakes
                   </dt>
                   <dd>
                      n/a
@@ -106,7 +106,7 @@ exports[`TabParameters has the expected html structure 1`] = `
 <div class=\\"column\\">
    <dl class=\\"info_dl\\">
       <dt>
-         Loose Steak<i class=\\"material-icons info-button\\">info_outline</i>
+         Loose Stake<i class=\\"material-icons info-button\\">info_outline</i>
       </dt>
       <dd>
          n/a
@@ -114,7 +114,7 @@ exports[`TabParameters has the expected html structure 1`] = `
 </dl>
    <dl class=\\"info_dl\\">
       <dt>
-         Delegated Steak<i class=\\"material-icons info-button\\">info_outline</i>
+         Delegated Stake<i class=\\"material-icons info-button\\">info_outline</i>
       </dt>
       <dd>
          n/a
