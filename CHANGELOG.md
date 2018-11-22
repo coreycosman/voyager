@@ -54,6 +54,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - [\#1547](https://github.com/cosmos/voyager/issues/1547) deleted archive directory of old components @jbibla
 - removed unit tests from prepush hook @faboweb
 - [\#1566](https://github.com/cosmos/voyager/issues/1566) putting querying errors in the store instead of showing notifications and update loading @faboweb
+- removed shopping-cart as we only delegate to one validator at a time @faboweb
 
 ### Fixed
 

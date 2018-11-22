@@ -116,7 +116,6 @@ describe(`Store`, () => {
       balance: { amount: 1 },
       min_time: new Date().toUTCString()
     })
-    expect(store.state.delegation.delegates).toHaveLength(1)
   })
 
   it(`should throttle updating the store cache`, async () => {

@@ -17,18 +17,6 @@ export default ({ node }) => {
   const state = JSON.parse(JSON.stringify(emptyState))
 
   const mutations = {
-    addToCart(state, delegate) {
-      // don't add to cart if already in cart
-      for (let existingDelegate of state.delegates) {
-        if (delegate.id === existingDelegate.id) return
-      }
-
-      state.delegates.push({
-        id: delegate.id,
-        delegate: Object.assign({}, delegate),
-        atoms: 0
-      })
-    },
     removeFromCart(state, delegate) {
       state.delegates = state.delegates.filter(c => c.id !== delegate)
     },
@@ -99,12 +87,6 @@ export default ({ node }) => {
               candidateId: validator_addr,
               value: parseFloat(shares)
             })
-            if (shares > 0) {
-              const delegate = candidates.find(
-                ({ operator_address }) => operator_address === validator_addr // this should change to address instead of operator_address
-              )
-              commit(`addToCart`, delegate)
-            }
           })
         }
         // delete delegations not present anymore
