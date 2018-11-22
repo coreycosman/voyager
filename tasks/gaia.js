@@ -2,6 +2,7 @@ const path = require(`path`)
 const fs = require(`fs-extra`)
 const util = require(`util`)
 const { spawn, exec } = require(`child_process`)
+const BN = require(`bignumber.js`)
 let { sleep } = require(`../test/e2e/common.js`)
 
 const osFolderName = {
@@ -62,11 +63,15 @@ async function initGenesis(
     coins: [
       {
         denom: `steak`,
-        amount: `150`
+        amount: BN(150)
+          .times(10e18)
+          .toFixed()
       },
       {
         denom: `localcoin`,
-        amount: `1000`
+        amount: BN(1000)
+          .times(10e18)
+          .toFixed()
       }
     ]
   })
