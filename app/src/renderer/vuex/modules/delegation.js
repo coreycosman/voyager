@@ -17,9 +17,6 @@ export default ({ node }) => {
   const state = JSON.parse(JSON.stringify(emptyState))
 
   const mutations = {
-    removeFromCart(state, delegate) {
-      state.delegates = state.delegates.filter(c => c.id !== delegate)
-    },
     setCommittedDelegation(state, { candidateId, value }) {
       let committedDelegates = Object.assign({}, state.committedDelegates)
       if (value === 0) {
@@ -133,8 +130,7 @@ export default ({ node }) => {
       state.loading = false
     },
     async updateDelegates({ dispatch }) {
-      let candidates = await dispatch(`getDelegates`)
-      return dispatch(`getBondedDelegates`, candidates)
+      return dispatch(`getBondedDelegates`)
     },
     async submitDelegation(
       {

@@ -99,7 +99,6 @@ describe(`Store`, () => {
     expect(
       store.state.delegation.unbondingDelegations[lcdClientMock.validators[1]]
     ).toBeFalsy()
-    expect(store.state.delegation.delegates).toHaveLength(0)
 
     await store.dispatch(`signIn`, {
       account: `default`,

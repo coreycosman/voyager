@@ -97,7 +97,7 @@ function getStorageKey(state) {
   return `store_${chainId}_${address}`
 }
 
-function loadPersistedState({ state, commit }, { password }) {
+function loadPersistedState({ state }, { password }) {
   const cachedState = localStorage.getItem(getStorageKey(state))
   if (cachedState) {
     const bytes = CryptoJS.AES.decrypt(cachedState, password)
